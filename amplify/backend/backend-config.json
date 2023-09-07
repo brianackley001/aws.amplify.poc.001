@@ -1,20 +1,6 @@
 {
   "api": {
-    "InitialRestApi": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "InitApiLambdaFunction"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
-    },
-    "awsamplifypoc001": {
+    "vueamplify001": {
       "dependsOn": [],
       "output": {
         "authConfig": {
@@ -32,7 +18,7 @@
     }
   },
   "auth": {
-    "awsamplifypoc001": {
+    "vueamplify001b0f39e63": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -41,73 +27,20 @@
           "SMS"
         ],
         "passwordProtectionSettings": {
-          "passwordPolicyCharacters": [
-            "REQUIRES_LOWERCASE",
-            "REQUIRES_NUMBERS",
-            "REQUIRES_SYMBOLS",
-            "REQUIRES_UPPERCASE"
-          ],
+          "passwordPolicyCharacters": [],
           "passwordPolicyMinLength": 8
         },
-        "signupAttributes": [],
-        "socialProviders": [],
-        "usernameAttributes": [
+        "signupAttributes": [
           "EMAIL"
         ],
+        "socialProviders": [],
+        "usernameAttributes": [],
         "verificationMechanisms": [
           "EMAIL"
         ]
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
-    }
-  },
-  "function": {
-    "InitApiLambdaFunction": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
-  "hosting": {
-    "amplifyhosting": {
-      "lastPushTimeStamp": "2023-08-30T23:40:59.530Z",
-      "service": "amplifyhosting",
-      "type": "cicd"
-    }
-  },
-  "parameters": {
-    "AMPLIFY_function_InitApiLambdaFunction_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "InitApiLambdaFunction"
-        }
-      ]
-    },
-    "AMPLIFY_function_InitApiLambdaFunction_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "InitApiLambdaFunction"
-        }
-      ]
-    },
-    "AMPLIFY_hosting_amplifyhosting_appId": {
-      "usedBy": [
-        {
-          "category": "hosting",
-          "resourceName": "amplifyhosting"
-        }
-      ]
-    },
-    "AMPLIFY_hosting_amplifyhosting_type": {
-      "usedBy": [
-        {
-          "category": "hosting",
-          "resourceName": "amplifyhosting"
-        }
-      ]
     }
   }
 }
