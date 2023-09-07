@@ -1,5 +1,5 @@
 projects:
-  awsamplifypoc001:
+  vueamplify001:
     schemaPath: src/graphql/schema.json
     includes:
       - src/graphql/**/*.js

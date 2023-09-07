@@ -12,7 +12,7 @@ export const onCreateTodo = /* GraphQL */ `
       __typename
     }
   }
-`;
+`
 export const onUpdateTodo = /* GraphQL */ `
   subscription OnUpdateTodo($filter: ModelSubscriptionTodoFilterInput) {
     onUpdateTodo(filter: $filter) {
@@ -24,7 +24,7 @@ export const onUpdateTodo = /* GraphQL */ `
       __typename
     }
   }
-`;
+`
 export const onDeleteTodo = /* GraphQL */ `
   subscription OnDeleteTodo($filter: ModelSubscriptionTodoFilterInput) {
     onDeleteTodo(filter: $filter) {
@@ -36,4 +36,4 @@ export const onDeleteTodo = /* GraphQL */ `
       __typename
     }
   }
-`;
+`
